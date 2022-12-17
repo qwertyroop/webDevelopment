@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$darkmode-background : #101925fd;
+$darkmode-color: #fff;
+$lightmode-background: #fff;
+$lightmode-color: #101925;
+$theTomato: rgb(19, 255, 19);
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: $darkmode-background;
+    overflow: overlay;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $theTomato;
+    border-radius: 200px;
+  }
+  
+
+*{
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: $darkmode-background;
+    color:$darkmode-color;
+    position: relative;
+    height: 1600px;
+  }
+  
+
+.light-mode {
+    background-color: $lightmode-background;
+    color: $lightmode-color;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button.resume{
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: $theTomato;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s ease-out;
+
+}
+
+.resume:hover{
+    background-color: rgba(15, 52, 100, 0.4);
+    transition: 0.2s ease-in;
+    color: white;
+}
+
+button#modeSwitcherBefore{
+    border-radius: 200px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    
+}
+
+.modeSwitcherAfter{
+    background-color: black;
+
+}
+
+.roopesh-memoji img{
+    position: absolute;
+    height: 30vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.glass-socialmedia-icons{
+    height: auto;
+    background-color:#101925;
+    // box-shadow: 5px 5px 30px  black;
+    outline: 1px solid $theTomato;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 600px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.5s ease-out;
+    // visibility: hidden;
+}
+
+.extraspace{
+    height: 50px;
+    position: fixed;
+}
+
+img.socialmedia-images{
+    height: 7vh;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+p.myBio{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h1.roopesh{
+    color: $theTomato;
+    margin-top: 100px;
+}
+
+#moreAboutMe{
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    transition: 0.3s ease-out;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    
+}
+
+#moreAboutMe:hover{
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: $theTomato;
+    color: black;
+    transition: 0.3s ease-out;
+
+}
+
+#moreAboutMe a{
+    text-decoration: none;
+    color: white;
+}
+
+#moreAboutMe a:hover{
+    color: black;
+    transition: 0.3s ease-out;
+
+}
+
+a.typewrite{
+    text-decoration: none;
+    color: white;
+}
+
+// h1.imA{
+//     color: $theTomato;
+// }
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    
+    100%   { transform: translate(0, -0px); }   
+}
+
+.floating:hover{
+    animation-play-state: paused;
+}
+
+// .glass-socialmedia-icons-after{
+//     visibility: visible;
+//     transition: 0.5s ease-in;
+//     margin-top: 0px;
+
+// }
+
+.project-container{
+    width: 94%;
+    outline: 1px solid white;
+    height: 200px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    
+    border-radius: 5px;
+    position: absolute;
+    margin-top: auto;
+    background: url(solar.gif);
+    
+   
+}
+
+.heading-project{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: white;
+}
+
+.project-cards{
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+    margin-top: 500px;
+    height: 100px;
+}
+
+.card{
+    height: auto;
+    width: auto;
+    background-color: white;
+    color: black;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.socialmediaicons img{
+    height: 30px;
+}
+
+.socialmediaicons{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+   
+    
+}
+
+
+img.imRoop{
+    margin-top: 100px;
+}
+
+
+
+a.mediaImgIcons, img.mediaImgIcons{
+    opacity: 0.5;
+    transition: 0.2s ease-out;
+
+}
+
+
+a.mediaImgIcons:hover, img.mediaImgIcons:hover{
+    opacity: 1;
+    transition: 0.2s ease-in;
+}
+
+a.resume-link{
+    height: 10px;
+    width: auto;
+    margin-top: 30px;
+}
+
+.project-btn{
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    transition: 0.3s ease-out;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+.project-btn:hover{
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: $theTomato;
+    color: black;
+    transition: 0.3s ease-out;
+}
+
+.project-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+a.resume-link:hover{
+    cursor: pointer;
+}
+
+button.resume:hover{
+    cursor: pointer;
+
+}
+
+.project-btn a:hover{
+    color: black;
+    transition: 0.3s ease-out;
+
+}
+
+.logo-reveal{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.logo-reveal img.logo-favi{
+    transition: 0.5s;
+}
+
+.logo-reveal:hover img.logo-favi{
+    
+    transition: 0.5s;
+}
+
+.logo-reveal:hover h1.logo-text{
+    visibility: visible;
+    transform: translate(0px, 25px);
+    transition: 0.5s;
+   
+}
+
+h1.logo-text{
+    visibility: visible;
+    transform: translate(0px, -100px);
+    transition: 0.5s;
+    
+}
+
+.logo-reveal:hover{
+    animation-play-state: paused;
+}
+
+
+.logo-reveal {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.8s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  
+
+  @keyframes shake {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }
+
+   .arrow { 
+    animation-name: arrow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-top: 100px;
+    margin-bottom: -300px;
+}
+ 
+
+.arrow img{
+    height: 50px;
+}
+
+
+@keyframes arrow {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    
+    100%   { transform: translate(0, -0px); }   
+}
+
+.arrow:hover{
+    animation-play-state: paused;
+}
